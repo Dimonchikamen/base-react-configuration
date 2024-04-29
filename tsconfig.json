@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "outDir": "config/build",
+    "isolatedModules": true,
+  
+    "noImplicitAny": true,
+    "module": "ESNext",
+  
+    "target": "es5",
+    "jsx": "react-jsx",
+  
+    "allowJs": false,
+    "moduleResolution": "node",
+  
+    "baseUrl": "src",
+    "paths": {
+      "$*": ["*"],
+    },
+  
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  },
+  
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  
+  "include": [
+    "./webpack.config.ts",
+    "./**/config/**/*.ts",
+    "./**/config/**/*.tsx",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./config/jest/jest.setup.ts"
+  ],
+  "exclude": ["node_modules", "**/__tests__/**", "**/__mocks/**"]
+}
+  
