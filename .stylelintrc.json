@@ -2,7 +2,6 @@
     "extends": [
         "stylelint-config-recommended",
         "stylelint-css-modules",
-        "stylelint-prettier/recommended",
         "stylelint-config-clean-order"
     ],
     "rules": {
